@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Studio10k
 
-## Getting Started
+We build websites for local businesses. They see it before they pay. $799 and it's theirs.
 
-First, run the development server:
+## Stack
+
+- Next.js 14 (App Router)
+- Tailwind CSS
+- Stripe (checkout)
+
+## Setup
 
 ```bash
+npm install
+cp .env.example .env  # Add your Stripe key
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## API Routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `POST /api/contact` — Saves name, email, message to `contacts.json`
+- `POST /api/stripe-checkout` — Creates a Stripe checkout session for $799
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts
 
-## Learn More
+- `scripts/find-targets.js` — Find local businesses via Google Places API
+- `scripts/outreach-email-template.md` — Cold email templates (3 variations)
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deployed to Vercel. To point `studio10k.com`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. In GoDaddy DNS, set A record to `76.76.21.21`
+2. In Vercel, add `studio10k.com` as a custom domain
 
-## Deploy on Vercel
+## Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Variable | Description |
+|---|---|
+| `STRIPE_SECRET_KEY` | Stripe secret key for checkout |
+| `GOOGLE_PLACES_API_KEY` | Google Places API key (for find-targets script) |
