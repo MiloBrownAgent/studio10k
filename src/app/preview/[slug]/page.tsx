@@ -264,14 +264,16 @@ function Hero({ b }: { b: PlumberConfig }) {
     <section
       className="relative overflow-hidden text-white py-32 md:py-48"
       style={{
-        background: `linear-gradient(135deg, #0a0d12 0%, #111827 50%, ${b.primaryColor}18 100%)`,
+        backgroundImage: "url('/hero-plumber.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
-      {/* Subtle radial glow using brand color */}
+      {/* Dark overlay with brand color tint */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0"
         style={{
-          background: `radial-gradient(ellipse at 70% 50%, ${b.primaryColor}28 0%, transparent 65%)`,
+          background: `linear-gradient(135deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.72) 60%, ${b.primaryColor}33 100%)`,
         }}
       />
 
