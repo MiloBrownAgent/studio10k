@@ -9,7 +9,15 @@ const DEMOS = [
     location: "Minneapolis, MN",
     color: "#1E3A5F",
     slug: "norblom-plumbing",
-    tagline: "Three Generations of Trust.",
+    tagline: "Serving Twin Cities Families Since 1923.",
+  },
+  {
+    name: "Weld & Sons Plumbing",
+    type: "Plumber",
+    location: "Minneapolis, MN",
+    color: "#7C3AED",
+    slug: "weld-and-sons",
+    tagline: "Family Plumbing. Minneapolis Made.",
   },
   {
     name: "Erik Nelson Plumbing",
@@ -20,12 +28,28 @@ const DEMOS = [
     tagline: "South Minneapolis' Trusted Plumber.",
   },
   {
+    name: "Ron the Sewer Rat",
+    type: "Sewer & Drain",
+    location: "Minneapolis, MN",
+    color: "#B45309",
+    slug: "ron-the-sewer-rat",
+    tagline: "The Twin Cities' Sewer Expert.",
+  },
+  {
     name: "Gopher Sewer & Drain",
     type: "Plumber",
     location: "Columbia Heights, MN",
     color: "#166534",
     slug: "gopher-sewer-drain",
     tagline: "Honest Work. Fair Price. Every Time.",
+  },
+  {
+    name: "St. Paul Pipeworks",
+    type: "Plumber",
+    location: "St. Paul, MN",
+    color: "#1D4ED8",
+    slug: "st-paul-pipeworks",
+    tagline: "Trusted St. Paul Plumbing.",
   },
 ];
 
@@ -86,31 +110,52 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="pt-32 pb-20 md:pt-44 md:pb-32 bg-navy text-cream">
+    <section className="pt-32 pb-20 md:pt-44 md:pb-28 bg-navy text-cream">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <p className="text-electric text-sm font-semibold tracking-widest uppercase mb-6">
-          We build it. You buy it. Simple.
+          Zero cost until you say yes
         </p>
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-          Your business deserves a website that works as hard as you do.
+          We build your business a{" "}
+          <span className="text-electric">professional website.</span>{" "}
+          You only pay if you want it.
         </h1>
         <p className="text-lg md:text-xl text-slate max-w-2xl mx-auto mb-10">
-          We build it first. You see it before you spend a dime. No contracts,
-          no deposits, no risk.
+          We research your business, build a complete site using your real info,
+          and send you a live link. No meetings. No deposits. No contracts.
+          If you love it — it&apos;s $799. If not, no hard feelings.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#work"
             className="bg-electric text-white font-semibold px-8 py-4 rounded-lg text-lg hover:bg-electric/90 transition"
           >
-            See a Demo
+            See Live Examples
           </a>
           <a
             href="#contact"
             className="border-2 border-cream/30 text-cream font-semibold px-8 py-4 rounded-lg text-lg hover:border-cream/60 transition"
           >
-            Get Your Free Preview
+            Get My Free Preview
           </a>
+        </div>
+        {/* Trust strip */}
+        <div className="flex flex-wrap justify-center gap-6 mt-12 text-sm text-slate">
+          <span className="flex items-center gap-2">
+            <span className="text-electric font-bold">20+</span> sites built for MN businesses
+          </span>
+          <span className="text-slate/30">|</span>
+          <span className="flex items-center gap-2">
+            <span className="text-electric font-bold">$0</span> upfront — ever
+          </span>
+          <span className="text-slate/30">|</span>
+          <span className="flex items-center gap-2">
+            <span className="text-electric font-bold">72hr</span> turnaround
+          </span>
+          <span className="text-slate/30">|</span>
+          <span className="flex items-center gap-2">
+            <span className="text-electric font-bold">100%</span> ownership when you buy
+          </span>
         </div>
       </div>
     </section>
@@ -327,7 +372,7 @@ function SampleWork() {
               </div>
               <div className="p-6">
                 <span className="text-xs font-semibold text-electric uppercase tracking-wider">
-                  {d.type} &bull; Minneapolis, MN
+                  {d.type} &bull; {d.location}
                 </span>
                 <h3 className="text-lg font-bold mt-1 mb-2">{d.name}</h3>
                 <p className="text-slate text-sm">
@@ -338,9 +383,9 @@ function SampleWork() {
           ))}
         </div>
         <p className="text-center text-slate text-sm mt-10">
-          We have 10 Minneapolis plumber previews ready.{" "}
+          We have <span className="text-electric font-semibold">20+</span> Twin Cities plumber previews live and ready to see.{" "}
           <a href="#contact" className="text-electric hover:underline">
-            Request yours →
+            Request one for your business →
           </a>
         </p>
       </div>
@@ -466,17 +511,46 @@ function Contact() {
 
 function Footer() {
   return (
-    <footer className="bg-navy border-t border-white/10 py-8">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-slate">
-        <span>
-          Studio<span className="text-electric">10k</span> &copy; 2026
-        </span>
-        <a
-          href="mailto:hello@studio10k.com"
-          className="hover:text-cream transition"
-        >
-          hello@studio10k.com
-        </a>
+    <footer className="bg-navy border-t border-white/10 py-12">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="grid sm:grid-cols-3 gap-8 mb-10 text-sm">
+          <div>
+            <div className="font-bold text-cream text-lg mb-2">
+              Studio<span className="text-electric">10k</span>
+            </div>
+            <p className="text-slate leading-relaxed">
+              We build websites for local service businesses. You only pay if you love it.
+            </p>
+            <p className="text-slate mt-2">Minneapolis, MN</p>
+          </div>
+          <div>
+            <div className="font-semibold text-cream mb-3">Quick Links</div>
+            <ul className="space-y-2 text-slate">
+              <li><a href="#work" className="hover:text-cream transition">See Examples</a></li>
+              <li><a href="#pricing" className="hover:text-cream transition">Pricing</a></li>
+              <li><a href="#faq" className="hover:text-cream transition">FAQ</a></li>
+              <li><a href="#contact" className="hover:text-cream transition">Get a Free Preview</a></li>
+            </ul>
+          </div>
+          <div>
+            <div className="font-semibold text-cream mb-3">Contact</div>
+            <ul className="space-y-2 text-slate">
+              <li>
+                <a href="mailto:hello@studio10k.com" className="hover:text-cream transition">
+                  hello@studio10k.com
+                </a>
+              </li>
+              <li>Minneapolis, MN</li>
+              <li className="text-xs text-slate/60 mt-4">
+                We typically respond within a few hours.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate/50">
+          <span>&copy; 2026 Studio10k. All rights reserved.</span>
+          <span>Built in Minneapolis &bull; Serving local businesses across the Twin Cities</span>
+        </div>
       </div>
     </footer>
   );
