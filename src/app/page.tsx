@@ -4,22 +4,28 @@ import { useState } from "react";
 
 const DEMOS = [
   {
-    name: "Apex Plumbing",
+    name: "Norblom Plumbing",
     type: "Plumber",
     location: "Minneapolis, MN",
-    color: "#1E40AF",
+    color: "#1E3A5F",
+    slug: "norblom-plumbing",
+    tagline: "Three Generations of Trust.",
   },
   {
-    name: "Summit HVAC",
-    type: "HVAC",
-    location: "Denver, CO",
-    color: "#059669",
+    name: "Erik Nelson Plumbing",
+    type: "Plumber",
+    location: "South Minneapolis, MN",
+    color: "#0F766E",
+    slug: "erik-nelson-plumbing",
+    tagline: "South Minneapolis' Trusted Plumber.",
   },
   {
-    name: "Ridge Roofing",
-    type: "Roofer",
-    location: "Austin, TX",
-    color: "#DC2626",
+    name: "Gopher Sewer & Drain",
+    type: "Plumber",
+    location: "Columbia Heights, MN",
+    color: "#166534",
+    slug: "gopher-sewer-drain",
+    tagline: "Honest Work. Fair Price. Every Time.",
   },
 ];
 
@@ -290,42 +296,53 @@ function SampleWork() {
           Sample Work
         </h2>
         <p className="text-slate text-center mb-16 max-w-xl mx-auto">
-          Real sites we built for real businesses. This is what yours could look
-          like.
+          Real sites we built for real Minneapolis plumbers. Click to see a live preview.
         </p>
         <div className="grid md:grid-cols-3 gap-8">
           {DEMOS.map((d) => (
-            <div
+            <a
               key={d.name}
-              className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden group"
+              href={`/preview/${d.slug}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden group hover:border-white/30 transition block"
             >
               <div
-                className="h-48 flex items-center justify-center"
-                style={{ backgroundColor: d.color + "20" }}
+                className="h-48 flex items-center justify-center relative"
+                style={{ backgroundColor: d.color + "25" }}
               >
-                <div className="text-center">
+                <div className="text-center px-4">
                   <div
-                    className="text-2xl font-bold mb-1"
+                    className="text-xl font-bold mb-1"
                     style={{ color: d.color }}
                   >
                     {d.name}
                   </div>
-                  <div className="text-slate text-sm">{d.location}</div>
+                  <div className="text-slate text-sm mb-2">{d.location}</div>
+                  <div className="text-xs opacity-60 italic">{d.tagline}</div>
                 </div>
+                <span className="absolute top-3 right-3 bg-electric text-white text-xs font-bold px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition">
+                  View →
+                </span>
               </div>
               <div className="p-6">
                 <span className="text-xs font-semibold text-electric uppercase tracking-wider">
-                  {d.type}
+                  {d.type} &bull; Minneapolis, MN
                 </span>
                 <h3 className="text-lg font-bold mt-1 mb-2">{d.name}</h3>
                 <p className="text-slate text-sm">
-                  Full website with service pages, reviews, contact form, and
-                  Google Maps integration.
+                  Custom site with services, reviews, service area map, and contact form — ready to hand over.
                 </p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
+        <p className="text-center text-slate text-sm mt-10">
+          We have 10 Minneapolis plumber previews ready.{" "}
+          <a href="#contact" className="text-electric hover:underline">
+            Request yours →
+          </a>
+        </p>
       </div>
     </section>
   );

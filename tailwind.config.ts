@@ -13,6 +13,7 @@ const config: Config = {
         cream: "#F8F5F0",
         electric: "#2563EB",
         slate: "#64748B",
+        dark: "#0F172A",
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
