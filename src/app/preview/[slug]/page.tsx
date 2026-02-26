@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { notFound } from "next/navigation";
 import PLUMBERS, { PlumberConfig } from "@/lib/plumbers";
 
@@ -458,6 +458,17 @@ export default function PreviewPage({
   if (!plumber) {
     notFound();
   }
+
+  // Fire view tracking on page load — notifies Dave via Telegram
+  useEffect(() => {
+    fetch(`/api/track/${plumber!.slug}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: plumber!.name }),
+    }).catch(() => {
+      // silently ignore tracking errors
+    });
+  }, [plumber]);
 
   return (
     <main className="bg-white">

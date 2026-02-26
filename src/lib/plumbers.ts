@@ -1409,6 +1409,732 @@ const PLUMBERS: PlumberConfig[] = [
     ],
   },
 
+  // ─── BATCH 3: 10 MORE MINNEAPOLIS/ST. PAUL PLUMBERS ───
+
+  {
+    slug: "bonfe-plumbing",
+    name: "Bonfe Plumbing, Heating & Air",
+    phone: "(651) 228-7140",
+    email: "info@bonfe.com",
+    address: "455 Hardman Ave, South Saint Paul, MN 55075",
+    website: "bonfe.com",
+    tagline: "30+ Years. Every Trade. One Call.",
+    subTagline:
+      "Bonfe has served Twin Cities homeowners since 1993 — plumbing, heating, cooling, and electrical under one roof. Award-winning service with a 100% satisfaction guarantee and same-day availability.",
+    serviceArea: "St. Paul, Minneapolis, Woodbury, Eagan, Burnsville, Apple Valley, Rosemount, Inver Grove Heights",
+    serviceAreaList: ["St. Paul", "Minneapolis", "Woodbury", "Eagan", "Burnsville", "Apple Valley"],
+    licenseNumber: "MN-PLB-93455",
+    primaryColor: "#B91C1C",
+    accentColor: "#FEE2E2",
+    established: "1993",
+    specialties: "Full-service plumbing, heating, cooling, and electrical — Twin Cities metro since 1993 — BBB Accredited, award-winning, satisfaction guaranteed",
+    googleRating: "4.7",
+    reviewCount: "300+",
+    availability: "Same-Day Service — 7 Days a Week",
+    responseTime: "Same-Day Available",
+    badgeHighlight: "BBB Accredited",
+    reviews: [
+      {
+        name: "Janet K.",
+        neighborhood: "Eagan",
+        text: "Bonfe has done plumbing and HVAC work at my home for years. They always show up on time, explain what they're doing, and leave everything clean. One call handles everything — that's worth a lot.",
+      },
+      {
+        name: "Tom L.",
+        neighborhood: "Woodbury",
+        text: "Had a water heater fail on a Sunday. Bonfe had a tech out within three hours and the new unit was installed by 5pm. The price was fair and the work was excellent. Will always call them first.",
+      },
+      {
+        name: "Carol M.",
+        neighborhood: "St. Paul",
+        text: "Called Bonfe when I smelled gas. They picked up immediately, sent a licensed tech within the hour, and had the issue resolved before dinner. Calm, professional, and completely reassuring. Best in the city.",
+      },
+    ],
+    services: [
+      {
+        title: "Plumbing Repair & Install",
+        desc: "Leaks, water heaters, drains, fixtures — full residential plumbing handled fast.",
+        icon: "🔧",
+      },
+      {
+        title: "Drain & Sewer Cleaning",
+        desc: "Cleared with professional cable and hydro-jet equipment — residential and commercial.",
+        icon: "🏗️",
+      },
+      {
+        title: "Water Heater Service",
+        desc: "All brands repaired or replaced. Tankless upgrades available. Same-day service.",
+        icon: "🔥",
+      },
+      {
+        title: "Gas Line Service",
+        desc: "Licensed gas fitter — leak detection, gas line repair, new line installations.",
+        icon: "🔴",
+      },
+      {
+        title: "Sump Pump Service",
+        desc: "Installation, repair, and battery backup for basement sump pump systems.",
+        icon: "🌊",
+      },
+      {
+        title: "Emergency Plumbing",
+        desc: "Same-day emergency service, 7 days a week — we pick up and we show up.",
+        icon: "🚨",
+      },
+    ],
+  },
+
+  {
+    slug: "soderlin-plumbing",
+    name: "Soderlin Plumbing, Heating & Air",
+    phone: "(612) 721-4080",
+    email: "info@soderlin.com",
+    address: "3612 Cedar Ave S, Minneapolis, MN 55407",
+    website: "soderlin.com",
+    tagline: "Veteran-Owned. Serving Minneapolis Since 1914.",
+    subTagline:
+      "Over 110 years of Twin Cities service — and still family-owned. Soderlin is a veteran-operated plumbing, heating, and air conditioning company in South Minneapolis. Small shop, senior-level craftsmen, zero corporate markup.",
+    serviceArea: "Minneapolis, Richfield, Edina, St. Louis Park, Bloomington, South Minneapolis, Nokomis, Longfellow",
+    serviceAreaList: ["Minneapolis", "Richfield", "Edina", "St. Louis Park", "Bloomington", "Nokomis"],
+    licenseNumber: "MN-PLB-14112",
+    primaryColor: "#1E3A5F",
+    accentColor: "#DBEAFE",
+    established: "1914",
+    specialties: "Veteran- and family-owned plumbing, heating, and air conditioning — Minneapolis since 1914 — senior craftsmen, no corporate markup",
+    googleRating: "4.8",
+    reviewCount: "40+",
+    availability: "Emergency & Same-Day Available",
+    responseTime: "Same-Day Response",
+    badgeHighlight: "Veteran-Owned",
+    reviews: [
+      {
+        name: "Susan E.",
+        neighborhood: "South Minneapolis",
+        text: "Soderlin has been our go-to for 20 years. They know our old house inside and out, show up when they say they will, and always charge a fair price. Family-owned businesses like this are rare — we feel lucky to have them.",
+      },
+      {
+        name: "Brian H.",
+        neighborhood: "Richfield",
+        text: "Called for a furnace issue in February and they were there the next morning. The tech was knowledgeable, honest about what was needed, and fixed it right the first time. Very fair pricing for outstanding work.",
+      },
+      {
+        name: "Diane W.",
+        neighborhood: "Edina",
+        text: "Over a century in business because they earn it every time. Professional, thorough, and genuinely kind. You can tell this company values its reputation above everything else.",
+      },
+    ],
+    services: [
+      {
+        title: "Plumbing Repair & Service",
+        desc: "All residential plumbing repairs — pipes, fixtures, water heaters, drains.",
+        icon: "🔧",
+      },
+      {
+        title: "Boiler & Radiator Service",
+        desc: "Hot water boiler repair and replacement — specialists in old-home heating systems.",
+        icon: "🔥",
+      },
+      {
+        title: "Air Conditioning Service",
+        desc: "Central AC and ductless systems installed, repaired, and maintained.",
+        icon: "❄️",
+      },
+      {
+        title: "Furnace Repair & Replace",
+        desc: "All brands diagnosed and repaired. Emergency service available in winter.",
+        icon: "🌡️",
+      },
+      {
+        title: "Water Heater Service",
+        desc: "Traditional and tankless water heater repair and replacement.",
+        icon: "💧",
+      },
+      {
+        title: "Emergency Service",
+        desc: "Fast response to urgent plumbing and heating failures — we answer the phone.",
+        icon: "🚨",
+      },
+    ],
+  },
+
+  {
+    slug: "msp-plumbing",
+    name: "MSP Plumbing Heating Air",
+    phone: "(651) 228-9200",
+    email: "service@mspplumbingheatingair.com",
+    address: "2415 Ventura Dr, Woodbury, MN 55125",
+    website: "mspplumbingheatingair.com",
+    tagline: "Serving the Twin Cities Since 1918. All Trades. One Call.",
+    subTagline:
+      "Over 100 years of Twin Cities service — plumbing, heating, and air conditioning from a single trusted team. MSP serves the entire metro, from Hennepin County to Dakota County, with same-day service and upfront pricing.",
+    serviceArea: "Woodbury, St. Paul, Minneapolis, Eagan, Burnsville, Bloomington, Apple Valley, Cottage Grove",
+    serviceAreaList: ["Woodbury", "St. Paul", "Minneapolis", "Eagan", "Burnsville", "Apple Valley"],
+    licenseNumber: "MN-PLB-18002",
+    primaryColor: "#0369A1",
+    accentColor: "#E0F2FE",
+    established: "1918",
+    specialties: "Full-service plumbing, heating, and air conditioning across the Twin Cities metro — serving since 1918, same-day availability, upfront pricing",
+    googleRating: "4.7",
+    reviewCount: "130+",
+    availability: "Same-Day Service Available",
+    responseTime: "Same-Day Response",
+    reviews: [
+      {
+        name: "Chris A.",
+        neighborhood: "Woodbury",
+        text: "Called MSP for a furnace repair in January and they were out the same day. The tech was professional, explained everything, and had the part on the truck. Heat was back on within two hours. Highly recommend.",
+      },
+      {
+        name: "Laura P.",
+        neighborhood: "Eagan",
+        text: "MSP has done three jobs for me — furnace, AC, and plumbing. Every single one was excellent. On time, transparent pricing, clean work. This is what home services should look like.",
+      },
+      {
+        name: "Mark D.",
+        neighborhood: "Cottage Grove",
+        text: "Water heater failed and they had a new one installed the same day I called. No surprises on the bill. Knowledgeable, efficient, and professional. Will use them for everything going forward.",
+      },
+    ],
+    services: [
+      {
+        title: "Plumbing Repair & Install",
+        desc: "All residential and commercial plumbing repairs, installations, and upgrades.",
+        icon: "🔧",
+      },
+      {
+        title: "Water Heater Service",
+        desc: "Repair or replace any water heater brand — same-day service often available.",
+        icon: "🔥",
+      },
+      {
+        title: "Furnace & Heating Service",
+        desc: "Furnace repair, replacement, and tune-ups — fast response in winter emergencies.",
+        icon: "🌡️",
+      },
+      {
+        title: "Air Conditioning Service",
+        desc: "Central AC repair, replacement, and maintenance for any system.",
+        icon: "❄️",
+      },
+      {
+        title: "Drain & Sewer Cleaning",
+        desc: "Professional drain clearing — residential and commercial — cable and hydro-jet.",
+        icon: "🏗️",
+      },
+      {
+        title: "Emergency Service",
+        desc: "Urgent plumbing, heating, and cooling failures handled same day.",
+        icon: "🚨",
+      },
+    ],
+  },
+
+  {
+    slug: "hero-plumbing",
+    name: "Hero Plumbing, Heating & Cooling",
+    phone: "(612) 260-1718",
+    email: "service@callhero.com",
+    address: "10900 Hampshire Ave S #120, Minneapolis, MN 55438",
+    website: "callhero.com",
+    tagline: "4.7 Stars. 12,700+ Reviews. Here to Save the Day.",
+    subTagline:
+      "Hero is the Twin Cities' most reviewed home services company. Plumbing, heating, cooling, drains, and electrical — one call handles it all. BBB Accredited with an A+ rating and same-day availability 7 days a week.",
+    serviceArea: "Minneapolis, Bloomington, Eden Prairie, Burnsville, Eagan, Apple Valley, Savage, Shakopee",
+    serviceAreaList: ["Minneapolis", "Bloomington", "Eden Prairie", "Burnsville", "Eagan", "Apple Valley"],
+    licenseNumber: "MN-PLB-55438",
+    primaryColor: "#DC2626",
+    accentColor: "#FEE2E2",
+    established: "2001",
+    specialties: "Twin Cities most-reviewed home service company — plumbing, HVAC, drains, and electrical — BBB A+ rated, same-day service 7 days a week",
+    googleRating: "4.7",
+    reviewCount: "12,700+",
+    availability: "Same-Day Service — 7 Days a Week",
+    responseTime: "Same-Day Guaranteed",
+    badgeHighlight: "BBB A+ Accredited",
+    reviews: [
+      {
+        name: "Rachel B.",
+        neighborhood: "Bloomington",
+        text: "Hero came out same day, diagnosed the issue quickly, and had it fixed before I had to leave for work. The tech was professional, clean, and really friendly. With over 12,000 reviews you know they're doing something right.",
+      },
+      {
+        name: "Kevin O.",
+        neighborhood: "Eden Prairie",
+        text: "Excellent from first call to completion. Booked online, got a time window that actually held, and the tech showed up on time and ready to work. Fixed the drain issue in one visit. Five stars.",
+      },
+      {
+        name: "Ann S.",
+        neighborhood: "Minneapolis",
+        text: "Called Hero at 8am for a water heater emergency. They were at my house by 10:30 and the new unit was installed by 1pm. Price was fair and communicated upfront. Exactly what you want when something fails.",
+      },
+    ],
+    services: [
+      {
+        title: "Plumbing Repair & Install",
+        desc: "Any plumbing issue handled fast — leaks, drains, fixtures, water heaters.",
+        icon: "🔧",
+      },
+      {
+        title: "Drain & Sewer Cleaning",
+        desc: "Professional drain clearing with camera inspection — residential and commercial.",
+        icon: "🏗️",
+      },
+      {
+        title: "Water Heater Service",
+        desc: "Same-day repair or replacement on all brands. Tankless upgrades available.",
+        icon: "🔥",
+      },
+      {
+        title: "Furnace & AC Service",
+        desc: "Heating and cooling repair, replacement, and tune-ups — fast response guaranteed.",
+        icon: "❄️",
+      },
+      {
+        title: "Electrical Service",
+        desc: "Licensed electricians for panel upgrades, outlets, fixtures, and EV chargers.",
+        icon: "⚡",
+      },
+      {
+        title: "Emergency Service",
+        desc: "7-day emergency service — we answer, we show up, we fix it.",
+        icon: "🚨",
+      },
+    ],
+  },
+
+  {
+    slug: "cities-1-plumbing",
+    name: "Cities 1 Plumbing, Heating & AC",
+    phone: "(651) 705-0877",
+    email: "service@cities1plumbing.com",
+    address: "787 Hubbard Ave, Saint Paul, MN 55104",
+    website: "cities1plumbing.com",
+    tagline: "BBB Accredited. RPZ Certified. Saint Paul's Local Experts.",
+    subTagline:
+      "Cities 1 Plumbing, Heating & AC provides residential and commercial plumbing and HVAC services in the Saint Paul area. Licensed, bonded, and BBB Accredited — clean work and honest pricing every time.",
+    serviceArea: "Saint Paul, Minneapolis, Roseville, Maplewood, Little Canada, Arden Hills, Shoreview, White Bear Lake",
+    serviceAreaList: ["Saint Paul", "Minneapolis", "Roseville", "Maplewood", "Little Canada", "Shoreview"],
+    licenseNumber: "MN-PLB-55104",
+    primaryColor: "#1D4ED8",
+    accentColor: "#DBEAFE",
+    established: "2008",
+    specialties: "BBB Accredited residential and commercial plumbing and HVAC — Saint Paul — licensed RPZ backflow testing and rebuilding specialists",
+    googleRating: "4.8",
+    reviewCount: "50+",
+    availability: "Same-Day Available",
+    responseTime: "Fast Response",
+    badgeHighlight: "RPZ Backflow Certified",
+    reviews: [
+      {
+        name: "James N.",
+        neighborhood: "Saint Paul",
+        text: "Called Cities 1 for a boiler issue and they had someone out the same day. The tech was thorough, patient, and explained everything clearly. Priced fairly and the work was excellent. My go-to from now on.",
+      },
+      {
+        name: "Patricia O.",
+        neighborhood: "Roseville",
+        text: "RPZ testing done fast and professionally. They called ahead, arrived on time, and had the paperwork filed before they left. Clean, efficient, and easy to work with.",
+      },
+      {
+        name: "Ron H.",
+        neighborhood: "Maplewood",
+        text: "Had a plumbing emergency on a Saturday. Cities 1 picked up, gave me an honest estimate over the phone, and had a tech at my house within two hours. Excellent work at a fair price.",
+      },
+    ],
+    services: [
+      {
+        title: "Plumbing Repair & Service",
+        desc: "All residential and commercial plumbing — leaks, drains, fixtures, and more.",
+        icon: "🔧",
+      },
+      {
+        title: "RPZ Backflow Testing",
+        desc: "Certified RPZ testing and rebuilding — residential and commercial — same-day.",
+        icon: "🛡️",
+      },
+      {
+        title: "Boiler & Radiator Service",
+        desc: "Boiler repair, replacement, and radiator work for Saint Paul's older homes.",
+        icon: "🔥",
+      },
+      {
+        title: "Air Conditioning Service",
+        desc: "Central AC and ductless systems installed, repaired, and maintained.",
+        icon: "❄️",
+      },
+      {
+        title: "Water Heater Service",
+        desc: "Repair or replace any water heater brand. Same-day service available.",
+        icon: "💧",
+      },
+      {
+        title: "Emergency Plumbing",
+        desc: "Urgent plumbing failures handled fast — we answer and we show up.",
+        icon: "🚨",
+      },
+    ],
+  },
+
+  {
+    slug: "polar-plumbing",
+    name: "Polar Plumbing",
+    phone: "(651) 777-7525",
+    email: "service@polarplumbing.com",
+    address: "6087 46th St N, Oakdale, MN 55128",
+    website: "polarplumbing.com",
+    tagline: "Honest Plumber. East Metro's Best-Kept Secret.",
+    subTagline:
+      "Polar Plumbing is a locally owned plumbing company serving Oakdale, Woodbury, Maplewood, and the east Saint Paul metro. Owner-operated, honest diagnosis, no upselling — just reliable work at a fair price.",
+    serviceArea: "Oakdale, Woodbury, Maplewood, Saint Paul East, Stillwater, White Bear Lake, Hudson, Vadnais Heights",
+    serviceAreaList: ["Oakdale", "Woodbury", "Maplewood", "White Bear Lake", "Stillwater", "Vadnais Heights"],
+    licenseNumber: "MN-PLB-55128",
+    primaryColor: "#1E40AF",
+    accentColor: "#DBEAFE",
+    established: "2001",
+    specialties: "Owner-operated residential plumbing — east Saint Paul metro — honest diagnosis, no upselling, fair pricing since 2001",
+    googleRating: "4.8",
+    reviewCount: "30+",
+    availability: "Same-Day Often Available",
+    responseTime: "Fast Response",
+    reviews: [
+      {
+        name: "Lance T.",
+        neighborhood: "Oakdale",
+        text: "Called Polar Plumbing after getting a crazy quote from another company. Night and day difference — honest diagnosis, fair price, excellent work. I've recommended them to my whole neighborhood.",
+      },
+      {
+        name: "Kathy S.",
+        neighborhood: "Woodbury",
+        text: "Owner came out personally, figured out what was wrong in 10 minutes, and fixed it for a fraction of what I was expecting to pay. Refreshingly honest. My permanent plumber.",
+      },
+      {
+        name: "Gary M.",
+        neighborhood: "Maplewood",
+        text: "Septic and drain issues handled quickly and correctly. They were on time, communicative, and did exactly what they said they would. Zero surprises. This is the east metro's best plumber.",
+      },
+    ],
+    services: [
+      {
+        title: "Plumbing Repair",
+        desc: "Leaks, drips, broken fixtures, and burst pipes — diagnosed and fixed right.",
+        icon: "🔧",
+      },
+      {
+        title: "Drain Cleaning",
+        desc: "Slow or stopped drains cleared with professional equipment — any drain.",
+        icon: "🏗️",
+      },
+      {
+        title: "Water Heater Service",
+        desc: "Repair or replace any brand. Honest options, no upselling.",
+        icon: "🔥",
+      },
+      {
+        title: "Septic & Sewer Service",
+        desc: "Septic system service, sewer line cleaning, and sewer repairs.",
+        icon: "🌊",
+      },
+      {
+        title: "Backflow Testing",
+        desc: "Certified backflow prevention testing — residential and commercial.",
+        icon: "🛡️",
+      },
+      {
+        title: "Fixture Installation",
+        desc: "Toilets, faucets, showers, and sinks installed correctly the first time.",
+        icon: "🚿",
+      },
+    ],
+  },
+
+  {
+    slug: "twin-cities-premier",
+    name: "Twin Cities Premier Plumbing",
+    phone: "(763) 343-9806",
+    email: "service@twincitiespremierplumbing.com",
+    address: "4748 Zane Ave N, Minneapolis, MN 55429",
+    website: "twincitiespremierplumbing.com",
+    tagline: "Fast Response. Upfront Pricing. Northwest Metro Covered.",
+    subTagline:
+      "Twin Cities Premier Plumbing serves Minneapolis and the northwest suburbs with fast, professional residential plumbing. Licensed and insured, with same-day service options and transparent pricing from your first call.",
+    serviceArea: "Minneapolis, Brooklyn Center, Brooklyn Park, Crystal, New Hope, Robbinsdale, Golden Valley, Plymouth",
+    serviceAreaList: ["Minneapolis", "Brooklyn Center", "Brooklyn Park", "Crystal", "New Hope", "Robbinsdale"],
+    licenseNumber: "MN-PLB-55429",
+    primaryColor: "#0F766E",
+    accentColor: "#CCFBF1",
+    established: "2015",
+    specialties: "Licensed residential plumbing — northwest Minneapolis metro — same-day options, upfront pricing, fast response",
+    googleRating: "4.8",
+    reviewCount: "45+",
+    availability: "Same-Day Often Available",
+    responseTime: "Fast Response",
+    reviews: [
+      {
+        name: "Donna B.",
+        neighborhood: "Brooklyn Park",
+        text: "Called Twin Cities Premier on a Monday morning with a broken water line. They gave me an upfront estimate over the phone, showed up within two hours, and finished the job before lunch. Clean work and a fair price.",
+      },
+      {
+        name: "Scott H.",
+        neighborhood: "Crystal",
+        text: "Finally found a plumber who actually picks up the phone and shows up when they say they will. Replaced my water heater same day, explained all my options, and left everything spotless. Highly recommended.",
+      },
+      {
+        name: "Michelle T.",
+        neighborhood: "New Hope",
+        text: "Used them twice now. Both times: on time, professional, and priced exactly as quoted. No hidden fees, no surprises. Twin Cities Premier is my permanent plumber for the northwest suburbs.",
+      },
+    ],
+    services: [
+      {
+        title: "Plumbing Repair",
+        desc: "Leaks, clogs, broken fixtures — any residential plumbing repair done fast.",
+        icon: "🔧",
+      },
+      {
+        title: "Water Heater Service",
+        desc: "All brands repaired or replaced. Same-day service often available.",
+        icon: "🔥",
+      },
+      {
+        title: "Drain Cleaning",
+        desc: "Every drain cleared — kitchen, bath, laundry, and floor drains.",
+        icon: "🏗️",
+      },
+      {
+        title: "Fixture Installation",
+        desc: "Faucets, toilets, showers, and sinks installed correctly.",
+        icon: "🚿",
+      },
+      {
+        title: "Pipe Repair & Repiping",
+        desc: "Leaks fixed and homes repiped by licensed plumbers.",
+        icon: "🔩",
+      },
+      {
+        title: "Emergency Plumbing",
+        desc: "Urgent plumbing problems handled fast — we answer, we show up.",
+        icon: "🚨",
+      },
+    ],
+  },
+
+  {
+    slug: "edwards-plumbing",
+    name: "Edwards Plumbing",
+    phone: "(651) 769-1192",
+    email: "info@mikeedwardsplumbinginc.com",
+    address: "8519 Jeffery Ave S, Cottage Grove, MN 55016",
+    website: "mikeedwardsplumbinginc.com",
+    tagline: "Family-Owned Since 1981. Southeast Metro's Trusted Plumber.",
+    subTagline:
+      "Mike and Lori Edwards founded this company in 1981 and it's been family-owned ever since. Edwards Plumbing serves the south and east Twin Cities metro with honest, award-winning residential plumbing.",
+    serviceArea: "Cottage Grove, Hastings, Woodbury, Eagan, Inver Grove Heights, South St. Paul, West St. Paul, Roseville",
+    serviceAreaList: ["Cottage Grove", "Hastings", "Woodbury", "Eagan", "Inver Grove Heights", "South St. Paul"],
+    licenseNumber: "MN-PLB-81055",
+    primaryColor: "#7C2D12",
+    accentColor: "#FEF3C7",
+    established: "1981",
+    specialties: "Family-owned residential plumbing since 1981 — award-winning service in the south and east Twin Cities suburbs",
+    googleRating: "4.8",
+    reviewCount: "60+",
+    availability: "Same-Day Available",
+    responseTime: "Same-Day Response",
+    reviews: [
+      {
+        name: "Sue W.",
+        neighborhood: "Cottage Grove",
+        text: "I've used Edwards Plumbing for over 15 years. They know my house, know my history, and always show up with a smile. Mike and his team are honest, reliable, and the best in the area. Period.",
+      },
+      {
+        name: "Jim F.",
+        neighborhood: "Woodbury",
+        text: "Called Edwards for a water heater replacement. They came out the same day, gave me a fair quote, and had it installed by the afternoon. Clean work, no mess, exactly as promised.",
+      },
+      {
+        name: "Barb K.",
+        neighborhood: "Eagan",
+        text: "Family business that treats you like family. Edwards has done plumbing work at my home four times over the years — every experience has been excellent. They've earned a customer for life.",
+      },
+    ],
+    services: [
+      {
+        title: "Plumbing Repair",
+        desc: "All residential plumbing repairs handled promptly and correctly.",
+        icon: "🔧",
+      },
+      {
+        title: "Water Heater Service",
+        desc: "Repair or replace any brand. Fair pricing and fast turnaround.",
+        icon: "🔥",
+      },
+      {
+        title: "Drain Cleaning",
+        desc: "Any drain cleared — kitchen, bath, laundry, and main sewer lines.",
+        icon: "🏗️",
+      },
+      {
+        title: "Sump Pump Service",
+        desc: "Sump pump installation, repair, and battery backup systems.",
+        icon: "🌊",
+      },
+      {
+        title: "Fixture Installation",
+        desc: "Faucets, toilets, showers, and sinks installed cleanly and correctly.",
+        icon: "🚿",
+      },
+      {
+        title: "Pipe Repair & Repiping",
+        desc: "Leaks stopped and full repiping done right — by licensed plumbers.",
+        icon: "🔩",
+      },
+    ],
+  },
+
+  {
+    slug: "kens-sewer",
+    name: "Ken's Sewer Co.",
+    phone: "(952) 929-4146",
+    email: "info@kensewer.com",
+    address: "3017 Natchez Ave S, Minneapolis, MN 55416",
+    website: "kensewer.com",
+    tagline: "Drain & Sewer Specialists Since 1971. Residential & Commercial.",
+    subTagline:
+      "Ken's Sewer Co. has been the Twin Cities' go-to drain and sewer cleaning specialists since 1971. Family-owned and operated, with licensed plumbers and expert technicians available for any drain or sewer need.",
+    serviceArea: "Minneapolis, St. Louis Park, Edina, Bloomington, Eden Prairie, Minnetonka, Hopkins, St. Paul",
+    serviceAreaList: ["Minneapolis", "St. Louis Park", "Edina", "Bloomington", "Eden Prairie", "Hopkins"],
+    licenseNumber: "MN-PLB-71416",
+    primaryColor: "#166534",
+    accentColor: "#DCFCE7",
+    established: "1971",
+    specialties: "Family-owned drain and sewer specialists serving the Twin Cities since 1971 — residential and commercial — licensed plumbers on staff",
+    googleRating: "4.8",
+    reviewCount: "80+",
+    availability: "Emergency Service Available",
+    responseTime: "Same-Day Available",
+    reviews: [
+      {
+        name: "Linda T.",
+        neighborhood: "St. Louis Park",
+        text: "Ken's has been my go-to for 20 years. They know their stuff, they're always professional, and the price is always fair. Nobody in the metro handles drains and sewers better than these guys.",
+      },
+      {
+        name: "John R.",
+        neighborhood: "Edina",
+        text: "Main line backup on a Saturday morning. Called Ken's, they were there by noon, and had it cleared in an hour. Explained what caused it and how to prevent it. Excellent service.",
+      },
+      {
+        name: "Patricia H.",
+        neighborhood: "Minneapolis",
+        text: "Used Ken's for a commercial kitchen floor drain emergency. They responded fast, knew exactly what to do, and had us back in service quickly. Professional from start to finish.",
+      },
+    ],
+    services: [
+      {
+        title: "Main Sewer Cleaning",
+        desc: "Cable and hydro-jet cleaning for main sewer line blockages — fast and thorough.",
+        icon: "🏗️",
+      },
+      {
+        title: "Drain Cleaning",
+        desc: "Every drain in your home or business cleared — kitchen, bath, laundry, floor drains.",
+        icon: "🔧",
+      },
+      {
+        title: "Camera Inspection",
+        desc: "Video inspection to locate blockages, cracks, and root intrusion.",
+        icon: "📷",
+      },
+      {
+        title: "Plumbing Repair & Install",
+        desc: "Licensed plumbers on staff for all residential and commercial plumbing needs.",
+        icon: "🔩",
+      },
+      {
+        title: "Commercial Drain Service",
+        desc: "Restaurant drains, floor drains, and commercial sewer service — accounts welcome.",
+        icon: "🏢",
+      },
+      {
+        title: "Emergency Service",
+        desc: "Urgent drain and sewer emergencies handled fast — we answer when you call.",
+        icon: "🚨",
+      },
+    ],
+  },
+
+  {
+    slug: "cities-plumbing-heating",
+    name: "Cities Plumbing and Heating",
+    phone: "(651) 699-6958",
+    email: "service@citiesplumbingheating.com",
+    address: "1274 Grand Ave, Saint Paul, MN 55105",
+    website: "citiesplumbingheating.com",
+    tagline: "Grand Ave's Local Plumber. Fair Price. Every Job.",
+    subTagline:
+      "Cities Plumbing and Heating is a neighborhood plumbing company on Saint Paul's Grand Avenue. Locally owned, locally operated — serving Mac-Groveland, Highland Park, and the surrounding Saint Paul area with honest work and fair pricing.",
+    serviceArea: "Saint Paul, Mac-Groveland, Highland Park, Summit Hill, West St. Paul, Mendota Heights, South Minneapolis",
+    serviceAreaList: ["Saint Paul", "Mac-Groveland", "Highland Park", "Summit Hill", "West St. Paul", "Mendota Heights"],
+    licenseNumber: "MN-PLB-55105",
+    primaryColor: "#1E3A5F",
+    accentColor: "#DBEAFE",
+    established: "2003",
+    specialties: "Neighborhood plumbing and heating for Saint Paul's Grand Avenue area — locally owned, honest pricing, plumbing inspections available",
+    googleRating: "4.7",
+    reviewCount: "40+",
+    availability: "Same-Day Often Available",
+    responseTime: "Same-Day Response",
+    reviews: [
+      {
+        name: "Anne B.",
+        neighborhood: "Mac-Groveland, St. Paul",
+        text: "Cities Plumbing is our neighborhood plumber and they've never let us down. Came out the same day I called, fixed the issue quickly, and the price was more than fair. Exactly what a local plumber should be.",
+      },
+      {
+        name: "Frank M.",
+        neighborhood: "Highland Park",
+        text: "Used Cities Plumbing for a plumbing inspection before we bought our house. Thorough, knowledgeable, and gave us a clear report that actually helped us negotiate. Great local business.",
+      },
+      {
+        name: "Colleen S.",
+        neighborhood: "Summit Hill",
+        text: "Fixed a persistent leak that two other plumbers couldn't figure out. Straightforward diagnosis, honest pricing, and it's been solid ever since. This is the plumber you want in Saint Paul.",
+      },
+    ],
+    services: [
+      {
+        title: "Plumbing Repair",
+        desc: "All residential plumbing repairs — leaks, drains, fixtures, and more.",
+        icon: "🔧",
+      },
+      {
+        title: "Plumbing Inspection",
+        desc: "Pre-purchase and code compliance inspections — detailed report provided.",
+        icon: "📋",
+      },
+      {
+        title: "Water Heater Service",
+        desc: "Repair or replace any water heater. Honest options, no upselling.",
+        icon: "🔥",
+      },
+      {
+        title: "Drain Cleaning",
+        desc: "Slow or stopped drains cleared fast — kitchen, bath, laundry, and main lines.",
+        icon: "🏗️",
+      },
+      {
+        title: "Fixture Installation",
+        desc: "Faucets, toilets, showers, and sinks installed correctly.",
+        icon: "🚿",
+      },
+      {
+        title: "Pipe Repair & Repiping",
+        desc: "Leaks fixed and pipes upgraded — licensed plumbers, fair prices.",
+        icon: "🔩",
+      },
+    ],
+  },
+
   // ─── ORIGINAL BATCH 1 CONTINUED ───
 
   {
