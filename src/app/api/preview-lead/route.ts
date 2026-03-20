@@ -5,23 +5,25 @@ const TELEGRAM_CHAT_ID = "8510702982";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, message } = await req.json();
+    const { name, phone, email, message, businessName, slug } = await req.json();
 
-    if (!name || !email) {
+    if (!name || !phone) {
       return NextResponse.json(
-        { error: "Name and email are required" },
+        { error: "Name and phone are required" },
         { status: 400 }
       );
     }
 
     const text = [
-      `📬 *New Studio10k Lead*`,
+      `🔥 *New Preview Site Lead*`,
       ``,
-      `*Name:* ${name}`,
-      `*Email:* ${email}`,
+      businessName ? `*Business:* ${businessName}` : null,
+      `*Contact:* ${name}`,
+      `*Phone:* ${phone}`,
+      email ? `*Email:* ${email}` : null,
       message ? `*Message:* ${message}` : null,
       ``,
-      `Reply: mailto:${email}`,
+      slug ? `Preview: https://studio10k.com/preview/${slug}` : null,
     ]
       .filter((l) => l !== null)
       .join("\n");
@@ -47,7 +49,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true });
   } catch (err) {
-    console.error("Contact error:", err);
+    console.error("Preview lead error:", err);
     return NextResponse.json(
       { error: "Internal server error" },
       { status: 500 }

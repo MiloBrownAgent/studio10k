@@ -824,9 +824,29 @@ function ContactForm({ b }: { b: PlumberConfig }) {
     e.preventDefault();
     setStatus("sending");
     const form = e.currentTarget;
-    await new Promise((r) => setTimeout(r, 900));
-    setStatus("sent");
-    form.reset();
+    const data = new FormData(form);
+    try {
+      const res = await fetch("/api/preview-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.get("name"),
+          phone: data.get("phone"),
+          email: data.get("email"),
+          message: data.get("message"),
+          businessName: b.name,
+          slug: b.slug,
+        }),
+      });
+      if (res.ok) {
+        setStatus("sent");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -885,6 +905,8 @@ function ContactForm({ b }: { b: PlumberConfig }) {
               ? "Sending..."
               : status === "sent"
               ? "✓ Message Sent — We'll Call You Soon!"
+              : status === "error"
+              ? "Something went wrong — call us directly"
               : "Request Free Estimate"}
           </button>
         </form>
