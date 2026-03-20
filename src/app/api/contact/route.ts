@@ -5,7 +5,7 @@ const TELEGRAM_CHAT_ID = "8510702982";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, message } = await req.json();
+    const { name, email, phone, message } = await req.json();
 
     if (!name || !email) {
       return NextResponse.json(
@@ -19,6 +19,7 @@ export async function POST(req: NextRequest) {
       ``,
       `*Name:* ${name}`,
       `*Email:* ${email}`,
+      phone ? `*Phone:* ${phone}` : null,
       message ? `*Message:* ${message}` : null,
       ``,
       `Reply: mailto:${email}`,

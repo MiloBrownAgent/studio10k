@@ -442,6 +442,7 @@ function Contact() {
         body: JSON.stringify({
           name: data.get("name"),
           email: data.get("email"),
+          phone: data.get("phone"),
           message: data.get("message"),
         }),
       });
@@ -479,6 +480,12 @@ function Contact() {
             type="email"
             required
             placeholder="Your email"
+            className="w-full bg-white/10 border border-white/10 rounded-lg px-4 py-3 text-cream placeholder:text-slate focus:outline-none focus:ring-2 focus:ring-electric"
+          />
+          <input
+            name="phone"
+            type="tel"
+            placeholder="Your phone number"
             className="w-full bg-white/10 border border-white/10 rounded-lg px-4 py-3 text-cream placeholder:text-slate focus:outline-none focus:ring-2 focus:ring-electric"
           />
           <textarea
